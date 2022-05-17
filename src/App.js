@@ -51,10 +51,7 @@ const errorDesign={
  const clearError=()=>{
   setErrorDisplay("")
  }
- const wordWrap={
-   wordWrap:"wordBreak"
- }
-
+ 
 
 
 
@@ -93,7 +90,7 @@ const errorDesign={
                           {todoArray.map((todo,index)=>(
                             <tr key={index} className="border ">
                               <td className="text-white">{index+1}</td>
-                              <td className="text-white" style={wordWrap}>{todo}</td>
+                              <td className="text-white" >{todo}</td>
                               <td className="text-white">
                                 <button className="btn text-white btn-warning me-2" onClick={()=>edit(index)}>Edit</button>
                                 <button className="btn text-white btn-danger" onClick={()=>dele(index)}>Delete</button>
